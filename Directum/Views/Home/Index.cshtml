@@ -1,0 +1,23 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form asp-controller="Home" asp-action="Index">
+    <div class ="form-group">
+        <input asp-for="name" type="text" placeholder="Имя"/>
+    </div>
+    <div class ="form-group">
+        <input asp-for="lastname" type="text" placeholder="Фамилия"/>
+    </div>
+    <div class ="form-group">
+        <input asp-for="patronyc" type="text" placeholder="Отчества"/>
+    </div>
+    <div class ="form-group">
+        <input asp-for="birthDate" type="text" placeholder="Дата рождения"/>
+    </div>
+    <button type="submit" class="btn">Отправить</button>
+</form>
+
+
+
